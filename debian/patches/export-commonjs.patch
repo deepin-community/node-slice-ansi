@@ -1,0 +1,51 @@
+Description: export commonjs file
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2021-11-02
+
+--- a/is-fullwidth-code-point/package.json
++++ b/is-fullwidth-code-point/package.json
+@@ -11,7 +11,11 @@
+ 		"url": "https://sindresorhus.com"
+ 	},
+ 	"type": "module",
+-	"exports": "./index.js",
++	"main": "./index.cjs",
++	"exports": {
++		"import": "./index.js",
++		"require": "./index.cjs"
++	},
+ 	"engines": {
+ 		"node": ">=12"
+ 	},
+@@ -19,6 +23,7 @@
+ 		"test": "xo && ava && tsd"
+ 	},
+ 	"files": [
++		"index.cjs",
+ 		"index.js",
+ 		"index.d.ts"
+ 	],
+--- a/package.json
++++ b/package.json
+@@ -6,7 +6,11 @@
+ 	"repository": "chalk/slice-ansi",
+ 	"funding": "https://github.com/chalk/slice-ansi?sponsor=1",
+ 	"type": "module",
+-	"exports": "./index.js",
++	"main": "./index.cjs",
++	"exports": {
++		"import": "./index.js",
++		"require": "./index.cjs"
++	},
+ 	"engines": {
+ 		"node": ">=12"
+ 	},
+@@ -14,6 +18,7 @@
+ 		"test": "xo && ava"
+ 	},
+ 	"files": [
++		"index.cjs",
+ 		"index.js"
+ 	],
+ 	"keywords": [

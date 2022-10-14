@@ -1,0 +1,13 @@
+version=4
+opts=\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-slice-ansi-$1/ \
+ https://github.com/chalk/slice-ansi/tags .*/v?([\d\.]+).tar.gz group
+
+opts=\
+component=is-fullwidth-code-point,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-is-fullwidth-code-point-$1/ \
+ https://github.com/sindresorhus/is-fullwidth-code-point/tags .*/archive.*/v?([\d\.]+).tar.gz group

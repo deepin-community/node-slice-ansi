@@ -1,0 +1,71 @@
+node-slice-ansi (5.0.0+~4.0.0-4) unstable; urgency=medium
+
+  * Team upload
+  * Add also a Replaces: field (Closes: #998886)
+
+ -- Yadd <yadd@debian.org>  Thu, 11 Nov 2021 17:56:58 +0100
+
+node-slice-ansi (5.0.0+~4.0.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Add Breaks node-string-width < 4.2.3+~9.2.2-1 (Closes: #998886)
+
+ -- Yadd <yadd@debian.org>  Wed, 10 Nov 2021 14:17:05 +0100
+
+node-slice-ansi (5.0.0+~4.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Add missing dependency to node-ansi-styles
+
+ -- Yadd <yadd@debian.org>  Tue, 02 Nov 2021 18:24:18 +0100
+
+node-slice-ansi (5.0.0+~4.0.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * debian/watch: use GitHub tags instead of npm registry
+  * Use dh-sequence-nodejs auto install
+  * Drop dependency to nodejs
+  * Embed is-fullwidth-code-point
+  * New upstream version 5.0.0+~4.0.0
+  * Build commonjs files
+  * Update copyright
+
+ -- Yadd <yadd@debian.org>  Tue, 02 Nov 2021 17:36:17 +0100
+
+node-slice-ansi (1.0.0-2) unstable; urgency=medium
+
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Use secure URI in debian/watch.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Update standards version to 4.1.1, no changes needed.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sat, 28 Aug 2021 23:33:20 +0100
+
+node-slice-ansi (1.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Bump standards, change section to javascript
+  * Use wcwidth.js instead of is-fullwidth-code-point
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 28 Sep 2017 15:04:01 +0530
+
+node-slice-ansi (0.0.4-1) experimental; urgency=low
+
+  * Initial release (Closes: #850118)
+
+ -- Sumedh Pendurkar <sumedh.pendurkar@gmail.com>  Wed, 04 Jan 2017 10:36:07 +0000
