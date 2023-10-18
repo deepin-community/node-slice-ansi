@@ -3,6 +3,7 @@ Upstream-Name: slice-ansi
 Upstream-Contact: https://github.com/chalk/slice-ansi/issues
 Source: https://github.com/chalk/slice-ansi#readme
  https://github.com/sindresorhus/is-fullwidth-code-point/tags
+ https://registry.npmjs.org/@types/slice-ansi
 
 Files: *
 Copyright: DC <threedeecee@gmail.com>
@@ -12,6 +13,14 @@ License: Expat
 Files: debian/*
 Copyright: 2017 Sumedh Pendurkar <sumedh.pendurkar@gmail.com>
  2021 Yadd <yadd@debian.org>
+License: Expat
+
+Files: is-fullwidth-code-point/*
+Copyright: Sindre Sorhus <sindresorhus@gmail.com>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat

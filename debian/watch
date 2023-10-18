@@ -10,4 +10,9 @@ component=is-fullwidth-code-point,\
 ctype=nodejs,\
 dversionmangle=auto,\
 filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-is-fullwidth-code-point-$1/ \
- https://github.com/sindresorhus/is-fullwidth-code-point/tags .*/archive.*/v?([\d\.]+).tar.gz group
+ https://github.com/sindresorhus/is-fullwidth-code-point/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-slice-ansi,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-slice-ansi-$1/" \
+ https://registry.npmjs.org/@types/slice-ansi https://registry.npmjs.org/@types/slice-ansi/-/slice-ansi-([\d\.]+)@ARCHIVE_EXT@ checksum

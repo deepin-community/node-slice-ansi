@@ -1,1 +1,1 @@
-babeljs --presets '@babel/preset-env' -o index.cjs index.js
+rollup -c debian/rollup.config.js
