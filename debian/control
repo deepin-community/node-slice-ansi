@@ -4,10 +4,14 @@ Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Sumedh Pendurkar <sumedh.pendurkar@gmail.com>
 Build-Depends: debhelper-compat (= 13)
- , dh-sequence-nodejs
- , node-babel7
+ , dh-sequence-nodejs (>= 0.12.3~)
  , node-ansi-styles <!nocheck>
-Standards-Version: 4.6.0
+ , node-rollup-plugin-commonjs
+ , node-rollup-plugin-node-resolve
+ , node-rollup-plugin-terser
+ , rollup
+ , terser
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-slice-ansi
 Vcs-Git: https://salsa.debian.org/js-team/node-slice-ansi.git
 Homepage: https://github.com/chalk/slice-ansi
@@ -18,9 +22,8 @@ Package: node-slice-ansi
 Architecture: all
 Depends: ${misc:Depends}
  , node-ansi-styles
-Provides: ${nodejs:Provides}
-Breaks: node-string-width (<< 4.2.3+~9.2.2~)
 Replaces: node-string-width (<< 4.2.3+~9.2.2~)
+Provides: ${nodejs:Provides}
 Description: Slice a string with ANSI escape codes
  Escape codes are used for formatting, color, and other output options on video
  text terminals.
